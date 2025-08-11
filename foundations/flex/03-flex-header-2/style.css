@@ -17,9 +17,7 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   padding: 8px;
   display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-  gap: 16px;
+  justify-content: space-between;
   
 }
 
@@ -44,10 +42,7 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: auto;
+  
 }
 
 a {
@@ -61,3 +56,10 @@ ul {
   display: flex;
   gap: 16px;
 }
+
+.left, .right{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
