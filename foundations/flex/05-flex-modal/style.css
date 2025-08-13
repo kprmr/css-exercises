@@ -9,6 +9,10 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
+  /* I'll give you this one for free lol */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
@@ -64,48 +68,27 @@ button.cancel {
   color: royalblue;
 }
 
-/* Here is the edited flexbox */
-body {
-    /* I'll give you this one for free lol */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
+/* Here is the start of Solution */
 .modal {
   display: flex;
-  flex-direction: column;
-  padding: 8px;
+  gap: 16px;
+  padding: 16px;
 }
 
-.part1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-}
-
-.part2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.part2i{
-  margin-left: 50px;
-  margin-right: 8px;
-  margin-bottom: 8px;
-}
-
-.part2ii {
-  margin: 8px;
-  margin-left: 50px;
-}
-
-.close-button {
-  margin-left: auto;
+.icon {
+  flex-shrink: 0;
 }
 
 .header {
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
 }
