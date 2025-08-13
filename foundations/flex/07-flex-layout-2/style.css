@@ -34,7 +34,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 ul {
@@ -50,34 +50,34 @@ li{
 .card {
   max-width: 300px;
   max-height: 300px;
-  padding: 48px;
+  padding: 16px;
 }
 
 .sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+  /* font-size: 24px;
   min-width: 300px;
   min-height: 90vh;
-  padding: 16px;
-  font-size: 24px;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .container {
+  flex: 1;
   display: flex;
-
 }
 
 .content {
   display: flex;
   flex-wrap: wrap;
   padding: 48px;
-  gap: 48px;
+  gap: 32px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: auto;
 }
 
 .header {
